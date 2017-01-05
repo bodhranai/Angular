@@ -1,0 +1,28 @@
+﻿<div ng-controller="EditController">
+    <fieldset ng-show="isEditable()">
+        <label for="firstName">
+            First Name
+        </label>
+        <input id="firstName" type="text" ng-model="edit.client.firstName" required />
+        <label for="">
+            Last Name
+        </label>
+        <input id="lastName" type="text" ng-model="edit.client.lastName" required  />
+        <label for="DateOfBirth">
+            Date of Birth
+        </label>
+        <input id="dateOfBirth" type="date" ng-model="edit.client.doB" required  />
+        <label for="Street Address">
+            street Address
+        </label>
+        <input id="streetAddress" type="text" ng-model="edit.client.address" required />
+        <label for="Zone">
+            street Address
+        </label>
+        <input id="zone" type="range" ng-model="edit.client.zone" required />
+
+
+        <button ng-click="save()">Save</button>
+        <button ng-click="cancel()">Cancel</button>
+    </fieldset>
+</div>
